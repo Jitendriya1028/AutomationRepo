@@ -1,4 +1,4 @@
-package Automation;
+package Selenium;
 
 import java.util.List;
 

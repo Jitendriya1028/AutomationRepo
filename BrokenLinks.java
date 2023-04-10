@@ -1,4 +1,4 @@
-package Automation;
+package Selenium;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -37,7 +37,7 @@ public class BrokenLinks {
 
      List<WebElement> links=   driver.findElements(By.cssSelector("li[class='gf-li'] a"));
 
-    SoftAssert a =new SoftAssert();
+      SoftAssert a =new SoftAssert();
 
     
 
@@ -61,7 +61,11 @@ public class BrokenLinks {
 
          System.out.println(respCode);
 
-         a.assertTrue(respCode<400, "The link with Text"+link.getText()+" is broken with code" +respCode); 
+         a.assertTrue(respCode<400, "The link with Text"+link.getText()+" is broken with code" +respCode);
+
+        
+
+    
 
      }
 
